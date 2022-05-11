@@ -3,9 +3,10 @@ import matter from 'gray-matter';
 import md from 'markdown-it';
 import Head from 'next/head';
 
+
 export async function getStaticPaths() {
   const files = fs.readdirSync('content/blog');
-
+  
   const paths = files.map((fileName) => ({
     params: {
       slug: fileName.replace('.md', ''),
@@ -19,6 +20,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
+  console.log(slug);
   const fileName = fs.readFileSync(`content/blog/${slug}.md`, 'utf-8');
   const { data: frontmatter, content } = matter(fileName);
   return {

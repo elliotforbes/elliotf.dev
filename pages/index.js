@@ -5,6 +5,7 @@ import Image from "next/image";
 import matter from "gray-matter";
 import styles from "../styles/Home.module.css";
 
+
 export async function getStaticProps() {
   const files = fs.readdirSync("content/blog");
 
@@ -44,7 +45,7 @@ export default function Home({ posts }) {
             <div key={slug} className="p-8 ">
               <Link href={`/blog/${slug}`}>
                 <a className="no-underline hover:underline">
-                  <div className="w-full h-auto relative">
+                  <div className="w-full h-auto">
                     <img src={frontmatter.image} alt={frontmatter.title} />
                   </div>
                   <h1 className="text-xl font-extrabold mb-4">
