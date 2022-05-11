@@ -1,6 +1,7 @@
 import Head from "next/head";
 import fs from "fs";
 import Link from "next/link";
+import Image from "next/image";
 import matter from "gray-matter";
 import styles from "../styles/Home.module.css";
 
@@ -42,7 +43,10 @@ export default function Home({ posts }) {
           {posts.map(({ slug, frontmatter }) => (
             <div key={slug} className="p-8 ">
               <Link href={`/blog/${slug}`}>
-                <a>
+                <a className="no-underline hover:underline">
+                  <div className="w-full h-auto relative">
+                    <img src={frontmatter.image} alt={frontmatter.title} />
+                  </div>
                   <h1 className="text-xl font-extrabold mb-4">
                     {frontmatter.title}
                   </h1>

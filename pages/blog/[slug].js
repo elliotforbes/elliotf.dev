@@ -41,6 +41,9 @@ export default function PostPage({ frontmatter, content }) {
         <meta property="og:url" content="https://myepitaph.com/"/>
         <meta property="og:type" content="website"/>
       </Head>
+      <div className="w-full h-auto">
+        <img src={frontmatter.image} alt={frontmatter.title} />
+      </div>
       <article className="container mx-auto">
         <h1 className="text-center text-3xl font-extrabold mb-8">{frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />

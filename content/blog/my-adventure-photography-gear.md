@@ -2,6 +2,7 @@
 title: 'My Amateur Adventure Photography Gear'
 metaDesc: 'In this article, I showcase all of the gear that I tend to take on various adventures with me'
 date: '2022-05-04'
+image: "https://media.elliotf.dev/2022/april/hvar.png"
 ---
 
 > Note: All (well most...) of these links are affiliate links. If you want to support my photography then click on the links and then buy your stuff! 

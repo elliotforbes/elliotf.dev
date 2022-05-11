@@ -2,8 +2,7 @@
 title: 'Hello World'
 metaDesc: 'Hello World!'
 date: '2022-05-01'
-tags:
-  - help
+image: "https://media.elliotf.dev/2022/april/hvar.png"
 ---
 
 We need to start adding loads of content here
