@@ -42,6 +42,7 @@ jobs:
       - aws-s3/sync:
           arguments: |
             --acl public-read \
+            --region eu-west-1 \
             --cache-control "max-age=86400"
           from: out
           to: 's3://elliotf.dev'
