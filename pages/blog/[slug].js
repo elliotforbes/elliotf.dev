@@ -45,7 +45,7 @@ export default function PostPage({ frontmatter, content }) {
         <img src={frontmatter.image} alt={frontmatter.title} className="mx-auto" />
       </div>
       <article className="container prose mx-auto">
-        <h1 className="text-center text-3xl font-extrabold mb-8">{frontmatter.title}</h1>
+        <h1 className="text-center text-3xl font-extrabold mb-8 mt-8">{frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
       </article>
     </div>
