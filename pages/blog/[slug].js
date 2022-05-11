@@ -32,7 +32,7 @@ export async function getStaticProps({ params: { slug } }) {
 
 export default function PostPage({ frontmatter, content }) {
   return (
-    <div className='prose mx-auto p-4'>
+    <div className='p-4'>
       <Head>
         <title>{frontmatter.title} | MyEpitaph.com</title>
         <meta name="description" content={`${frontmatter.metaDesc}`}/>
@@ -42,9 +42,9 @@ export default function PostPage({ frontmatter, content }) {
         <meta property="og:type" content="website"/>
       </Head>
       <div className="w-full h-auto">
-        <img src={frontmatter.image} alt={frontmatter.title} />
+        <img src={frontmatter.image} alt={frontmatter.title} className="mx-auto" />
       </div>
-      <article className="container mx-auto">
+      <article className="container prose mx-auto">
         <h1 className="text-center text-3xl font-extrabold mb-8">{frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
       </article>
