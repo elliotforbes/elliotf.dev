@@ -34,7 +34,7 @@ export default function Home({ posts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className="prose mx-auto">
         <h2 className="font-extrabold text-3xl mb-8 text-center">
           All Articles
         </h2>
