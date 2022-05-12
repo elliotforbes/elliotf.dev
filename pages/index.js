@@ -1,7 +1,6 @@
 import Head from "next/head";
 import fs from "fs";
 import Link from "next/link";
-import Image from "next/image";
 import matter from "gray-matter";
 import styles from "../styles/Home.module.css";
 
