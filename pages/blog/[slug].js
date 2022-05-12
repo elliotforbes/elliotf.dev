@@ -3,10 +3,11 @@ import matter from 'gray-matter';
 import md from 'markdown-it';
 import Head from 'next/head';
 
-
 export async function getStaticPaths() {
   const files = fs.readdirSync('content/blog');
   
+  
+
   const paths = files.map((fileName) => ({
     params: {
       slug: fileName.replace('.md', ''),
@@ -20,7 +21,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  console.log(slug);
   const fileName = fs.readFileSync(`content/blog/${slug}.md`, 'utf-8');
   const { data: frontmatter, content } = matter(fileName);
   return {
@@ -47,7 +47,8 @@ export default function PostPage({ frontmatter, content }) {
         <div className="w-full h-auto">
           <img src={frontmatter.image} alt={frontmatter.title} className="mx-auto" />
         </div>
-        <h1 className="text-center text-3xl font-extrabold mb-8 mt-8">{frontmatter.title}</h1>
+        <h1 className="text-center text-5xl font-extrabold mb-8 mt-8">{frontmatter.title}</h1>
+        <p className="text-center text-gray-700 text-sm mb-8">{frontmatter.date}</p>
         <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
       </article>
     </div>
