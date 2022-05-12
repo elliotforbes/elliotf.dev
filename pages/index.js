@@ -36,13 +36,13 @@ export default function Home({ posts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="prose mx-auto">
+      <main className="prose md:mx-auto">
         <h2 className="font-extrabold text-3xl mb-8 text-center">
           All Articles
         </h2>
-        <div className="container mx-auto p-4 md:p-0">
+        <div className="md:container mx-auto p-4 md:p-0">
           {posts.map(({ slug, frontmatter }) => (
-            <div key={slug} className="p-8 ">
+            <div key={slug} className="md:p-8 mb-16">
               <Link href={`/blog/${slug}`}>
                 <a className="no-underline hover:underline">
                   <div className="w-full h-auto">
