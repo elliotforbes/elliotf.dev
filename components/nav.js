@@ -6,7 +6,7 @@ export default function Nav() {
   return (
     <div className="p-4 mx-auto">
       <div className="grid md:grid-cols-3 container mx-auto md:justify-between">
-       <div className="md:block md:flex text-white">
+       <div className="flex justify-center md:justify-none my-4 md:block md:flex text-white">
           <div className="relative my-4">
             <Link href="/">
               <a className="button hover:underline z-10 pr-4 pl-4 block text-black pt-3 p-2 mr-4">
@@ -55,8 +55,8 @@ export default function Nav() {
             </button>
           </div>
         </div>
-        <div className="md:block text-white">
-          <div className="float-right flex relative my-4">
+        <div className="md:block items-center text-white">
+          <div className="md:float-right flex justify-center md:justify-none my-8 md:my-4">
             <Link href="https://twitter.com/elliot_f">
               <a className="button z-10 pr-4 pl-4 block text-black pt-3 p-2 mr-4">
                 <FontAwesomeIcon icon={faTwitter}/>
