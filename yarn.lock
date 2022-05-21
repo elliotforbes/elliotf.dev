@@ -79,6 +79,18 @@
   "resolved" "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz"
   "version" "1.2.1"
 
+"@markdoc/markdoc@^0.1.1", "@markdoc/markdoc@^0.1.2":
+  "integrity" "sha512-3p+JTC1A0eqBdrl2UOIRoy+FLKtG1mh81R3Zzdm7FJiQIMt2mJmqmVQNDf3Md62G9rTtbj0ZuxlEattMbaslbw=="
+  "resolved" "https://registry.npmjs.org/@markdoc/markdoc/-/markdoc-0.1.2.tgz"
+  "version" "0.1.2"
+
+"@markdoc/next.js@^0.1.4":
+  "integrity" "sha512-1da7H1c8/RZ1s02Cybh/8wHAwkyHu4ZP8ygK0nL+IK8jFO66J5UrYFIL2DCBDQy1uJSUgJdVErmLjeuK8wXHBg=="
+  "resolved" "https://registry.npmjs.org/@markdoc/next.js/-/next.js-0.1.4.tgz"
+  "version" "0.1.4"
+  dependencies:
+    "js-yaml" "^4.1.0"
+
 "@next/env@12.1.6":
   "integrity" "sha512-Te/OBDXFSodPU6jlXYPAXpmZr/AkG6DCATAxttQxqOWaq6eDFX25Db3dK0120GZrSZmv4QCe9KsZmJKDbWs4OA=="
   "resolved" "https://registry.npmjs.org/@next/env/-/env-12.1.6.tgz"
@@ -1402,6 +1414,11 @@
   dependencies:
     "yallist" "^4.0.0"
 
+"luxon@^2.4.0":
+  "integrity" "sha512-w+NAwWOUL5hO0SgwOHsMBAmZ15SoknmQXhSO0hIbJCAmPKSsGeK8MlmhYh2w6Iib38IxN2M+/ooXWLbeis7GuA=="
+  "resolved" "https://registry.npmjs.org/luxon/-/luxon-2.4.0.tgz"
+  "version" "2.4.0"
+
 "markdown-it@^13.0.1":
   "integrity" "sha512-lTlxriVoy2criHP0JKRhO2VDG9c2ypWCsT237eDiLqi09rmbKoUetyGHq2uOIRoRS//kfoJckS0eUzzkDR+k2Q=="
   "resolved" "https://registry.npmjs.org/markdown-it/-/markdown-it-13.0.1.tgz"
@@ -1468,7 +1485,7 @@
   "resolved" "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   "version" "1.4.0"
 
-"next@>=10.2.0", "next@12.1.6":
+"next@*", "next@>=10.2.0", "next@12.1.6":
   "integrity" "sha512-cebwKxL3/DhNKfg9tPZDQmbRKjueqykHHbgaoG4VBRH3AHQJ2HO0dbKFiS1hPhe1/qgc2d/hFeadsbPicmLD+A=="
   "resolved" "https://registry.npmjs.org/next/-/next-12.1.6.tgz"
   "version" "12.1.6"
@@ -1782,7 +1799,7 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   "version" "16.13.1"
 
-"react@^17.0.2 || ^18.0.0-0", "react@^18.1.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16.x", "react@18.1.0":
+"react@*", "react@^17.0.2 || ^18.0.0-0", "react@^18.1.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16.x", "react@18.1.0":
   "integrity" "sha512-4oL8ivCz5ZEPyclFQXaNksK3adutVS8l2xzZU0cqEFrE9Sb7fC0EFK5uEk74wIreL1DERyjvsU915j1pcT2uEQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.1.0.tgz"
   "version" "18.1.0"

@@ -7,9 +7,13 @@ image: "https://media.elliotf.dev/2021/september/snowdon-sun-rays.jpg"
 
 Snowdon was an incredible experience. We had traveled down from Scotland 2 days before to stay in a wee Airbnb in the middle of nowhere in the North of Wales for my 28th Birthday with the intention of exploring Wales a little and conquering its highest mountain.
 
+![Snowdon Drone](https://media.elliotf.dev/2021/september/drone-sky-shot.jpg) {% .full-width %}
+
 We thankfully booked parking a few days prior to our trip for Sunday which guaranteed us a spot at the carpark, at the start of the Pyg track, all day for about £25. It is an incredibly popular mountain to climb and we absolutely did not want to get there and have to trek for miles up a road to begin our trek. 
 
 This proved to be worth the cost as we ended up heading up later in the day to try and avoid the worst of the bad weather. We had taken a look at the forecast the night before, seen that it was giving rain until around 10am and it should have cleared up as the day went on.  
+
+![Snowdon Drone](https://media.elliotf.dev/2021/september/snowdon-base-waterfall.jpg) {% .full-width %}
 
 The rain hung around for a little longer than we anticipated and we started off the walk from the car park in a heavy drizzle with poor visibility. At this point we weren't the most optimistic in the world that we would be able to see anything on our trek.
 
@@ -17,12 +21,16 @@ After a bit of hiking, you eventually hit the ridge of the mountain and are pres
 
 Given we are just at the start of our mountaineering journey, you'll forgive us for opting for the safer Pyg Track. Although, given the weather conditions, we would have been missing out on some absolutely stunning views in the valley of Snowdon if we'd opted for the higher path which remained shrouded with clouds for the majority of the hike.
 
+![Snowdon Drone](https://media.elliotf.dev/2021/september/snowdon-wide-sunrays.jpg) {% .full-width %}
+
 Following the lower path, the clouds eventually lifted and started to tease us with the promise of some great views over the mountains and over the lakes below.
 Snowdonia is truly a beautiful part of the world and the weather was certainly enhancing it's beauty. If you do get the chance to visit it, then it's absolutely worth the journey down.
 
 At this point in the hike, the walk along the Pyg Track is relatively straightforward and the incline wasn't fairly gentle for much of the hike. There are certain technical sections that required a little bit more care and attention, but there were no sections that made this overly difficult for new hikers.
 
 I'd rank this is as one of the easier mountains than a few that I've had the pleasure of climbing, given the well-maintained path all the way to the top. Although I don't want to understate that it was still physically exerting!
+
+![Snowdon Drone](https://media.elliotf.dev/2021/september/snowdon-waterfall.jpg) {% .full-width %}
 
 Eventually, the miner's track will merge into the Pyg track and it's at this point the incline becomes a little steeper. You'll find yourself hitting slightly more challenging sections that require some big steps up and using your hands for balance.
 

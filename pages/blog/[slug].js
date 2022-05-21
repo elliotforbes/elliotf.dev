@@ -1,13 +1,12 @@
 import fs from 'fs';
+import React from "react";
 import matter from 'gray-matter';
-import md from 'markdown-it';
+import Markdoc from "@markdoc/markdoc";
 import Head from 'next/head';
 
 export async function getStaticPaths() {
   const files = fs.readdirSync('content/blog');
   
-  
-
   const paths = files.map((fileName) => ({
     params: {
       slug: fileName.replace('.md', ''),
@@ -33,6 +32,9 @@ export async function getStaticProps({ params: { slug } }) {
 
 
 export default function PostPage({ frontmatter, content }) {
+  const ast = Markdoc.parse(content);
+  const page = Markdoc.transform(ast);
+  console.log(page)
   return (
     <div className='p-4'>
       <Head>
@@ -51,7 +53,9 @@ export default function PostPage({ frontmatter, content }) {
           <h1 className="text-center text-5xl font-extrabold mb-8 mt-8">{frontmatter.title}</h1>
           <p className="text-center text-gray-700 text-sm mb-8">{frontmatter.date}</p>
         </div>
-        <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+        <div>
+          {Markdoc.renderers.react(page, React)}
+        </div>
       </article>
     </div>
   );
