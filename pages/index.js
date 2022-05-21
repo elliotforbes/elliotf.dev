@@ -48,7 +48,7 @@ export default function Home({ posts }) {
             <div key={slug} className="pb-8 mb-4 border-b border-gray-200">
               <Link href={`/blog/${slug}`}>
                 <a className="no-underline hover:underline">
-                  <div className="w-full h-auto">
+                  <div className="half-width mb-8">
                     <img src={frontmatter.image} alt={frontmatter.title} />
                   </div>
                   <div className="p-4 pt-0">

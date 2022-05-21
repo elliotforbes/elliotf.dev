@@ -6,6 +6,7 @@ draft: true
 image: "https://media.elliotf.dev/2022/april/hvar-island.png"
 ---
 
-![East Gate](https://media.elliotf.dev/2022/april/east-gate.png)
+![East Gate](https://media.elliotf.dev/2022/april/east-gate.png) {% .half-width %}
 
-![Hvar Port ](https://media.elliotf.dev/2022/april/hvar-port.png)
+![Hvar Port](https://media.elliotf.dev/2022/april/hvar-port.png) {% .half-width %}
+

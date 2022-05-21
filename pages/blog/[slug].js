@@ -46,7 +46,7 @@ export default function PostPage({ frontmatter, content }) {
         <meta property="og:type" content="website"/>
       </Head>
       <article className="container prose mx-auto">
-        <div className="w-full h-auto">
+        <div className="half-width">
           <img src={frontmatter.image} alt={frontmatter.title} className="mx-auto" />
         </div>
         <div className="border-b border-gray-200 mb-8">
