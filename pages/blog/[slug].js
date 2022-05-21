@@ -34,7 +34,6 @@ export async function getStaticProps({ params: { slug } }) {
 export default function PostPage({ frontmatter, content }) {
   const ast = Markdoc.parse(content);
   const page = Markdoc.transform(ast);
-  console.log(page)
   return (
     <div className='p-4'>
       <Head>
@@ -46,9 +45,10 @@ export default function PostPage({ frontmatter, content }) {
         <meta property="og:type" content="website"/>
       </Head>
       <article className="container prose mx-auto">
+        {frontmatter.image !== undefined ?
         <div className="half-width">
           <img src={frontmatter.image} alt={frontmatter.title} className="mx-auto" />
-        </div>
+        </div> : <></>}
         <div className="border-b border-gray-200 mb-8">
           <h1 className="text-center text-5xl font-extrabold mb-8 mt-8">{frontmatter.title}</h1>
           <p className="text-center text-gray-700 text-sm mb-8">{frontmatter.date}</p>
