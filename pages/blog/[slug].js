@@ -48,8 +48,6 @@ export default function PostPage({ frontmatter, content }) {
         {/* Twitter */}
         <meta name="twitter:card" content="summary" key="twcard" />
         <meta name="twitter:creator" content="@elliot_f" key="twhandle" />
-
-
       </Head>
       <article className="container prose mx-auto">
         {frontmatter.image !== undefined ?
