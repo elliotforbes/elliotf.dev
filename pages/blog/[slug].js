@@ -44,7 +44,7 @@ export default function PostPage({ frontmatter, content }) {
       <Head>
         <title>{frontmatter.title} | Elliot Forbes</title>
         <meta name="description" content={`${frontmatter.metaDesc}`}/>
-        <meta property="og:title" content={`${frontmatter.title} + " | Elliot Forbes`} />
+        <meta property="og:title" content={`${frontmatter.title} | Elliot Forbes`} />
         <meta property="og:description" content={`${frontmatter.metaDesc}`}/>
         <meta property="og:url" content="https://elliotf.dev/"/>
         <meta property="og:type" content="website"/>
