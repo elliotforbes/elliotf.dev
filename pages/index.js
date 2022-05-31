@@ -2,6 +2,7 @@ import Head from "next/head";
 import fs from "fs";
 import Link from "next/link";
 import matter from "gray-matter";
+import moment from 'moment';
 import styles from "../styles/Home.module.css";
 import { DateTime } from 'luxon'
 
@@ -32,6 +33,11 @@ export async function getStaticProps() {
     },
   };
 }
+
+const formatDate = (value) => {
+  return moment(value).format('DD MMM, YYYY')
+}
+
 
 export default function Home({ posts }) {
   return (
@@ -65,12 +71,8 @@ export default function Home({ posts }) {
                     <img src={frontmatter.image} alt={frontmatter.title} />
                   </div> : <></>}
                   <div className="md:p-4 pt-0">
-                    <h1 className="text-xl font-extrabold mb-4">
-                      {frontmatter.title}
-                    </h1>
-                    <p className="text-sm text-gray-800 mb-4">
-                      {frontmatter.date}
-                    </p>
+                    <h1>{frontmatter.title}</h1>
+                    <p className="date">{formatDate(frontmatter.date)}</p>
                     <p className="text-md text-gray-700">
                       {frontmatter.metaDesc}
                     </p>

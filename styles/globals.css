@@ -49,3 +49,24 @@ a {
     margin: auto;
   }
 }
+
+.date {
+  --text-opacity: 1;
+  color: #4a5568;
+  color: rgba(74,85,104,var(--text-opacity));
+  font-size: .875rem;
+  margin-bottom: 2.5rem;
+  margin-top: 0.25rem;
+  text-align: center;
+}
+
+h1 {
+  --text-opacity: 1;
+  color: #2d3748;
+  color: rgba(45,55,72,var(--text-opacity));
+  font-size: 1.875rem;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: -.025em;
+  line-height: 1.375;
+}

@@ -2,6 +2,7 @@ import fs from 'fs';
 import React from "react";
 import matter from 'gray-matter';
 import Markdoc from "@markdoc/markdoc";
+import moment from 'moment';
 import Head from 'next/head';
 
 export async function getStaticPaths() {
@@ -30,6 +31,10 @@ export async function getStaticProps({ params: { slug } }) {
   };
 }
 
+const formatDate = (value) => {
+  return moment(value).format('DD MMM, YYYY')
+}
+
 
 export default function PostPage({ frontmatter, content }) {
   const ast = Markdoc.parse(content);
@@ -55,8 +60,8 @@ export default function PostPage({ frontmatter, content }) {
           <img src={frontmatter.image} alt={frontmatter.title} className="mx-auto" />
         </div> : <></>}
         <div className="border-b border-gray-200 mb-8">
-          <h1 className="text-center text-5xl font-extrabold mb-8 mt-8">{frontmatter.title}</h1>
-          <p className="text-center text-gray-700 text-sm mb-8">{frontmatter.date}</p>
+          <h1 className="text-center">{frontmatter.title}</h1>
+          <p className="text-center text-gray-700 text-sm mb-8">{formatDate(frontmatter.date)}</p>
         </div>
         <div>
           {Markdoc.renderers.react(page, React)}
