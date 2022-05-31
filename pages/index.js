@@ -40,10 +40,22 @@ export default function Home({ posts }) {
         <title>Elliot Forbes | Personal Blog</title>
         <meta name="description" content="Elliot Forbes personal blog" />
         <link rel="icon" href="/favicon.ico" />
+
+        <meta name="description" content="My personal mini-adventure photography blog - absolutely no tech content whatsoever sorry"/>
+        <meta property="og:title" content="Elliot Forbes Photography" />
+        <meta property="og:description" content="My personal mini-adventure photography blog" />
+        <meta property="og:url" content="https://elliotf.dev/"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://media.elliotf.dev/2022/05/29/DSC00117.jpg" key="ogimage" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary" key="twcard" />
+        <meta name="twitter:creator" content="@elliot_f" key="twhandle" />
+
       </Head>
 
       <main className="prose md:mx-auto">
-        <div className="md:container mx-auto p-4 md:p-0">
+        <div className="md:container mx:mx-auto p-2 md:p-0">
           {posts.map(({ slug, frontmatter }) => (
             <div key={slug} className="pb-8 mb-4 border-b border-gray-200">
               <Link href={`/blog/${slug}`}>
@@ -52,7 +64,7 @@ export default function Home({ posts }) {
                   <div className="half-width mb-8">
                     <img src={frontmatter.image} alt={frontmatter.title} />
                   </div> : <></>}
-                  <div className="p-4 pt-0">
+                  <div className="md:p-4 pt-0">
                     <h1 className="text-xl font-extrabold mb-4">
                       {frontmatter.title}
                     </h1>

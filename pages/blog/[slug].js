@@ -51,7 +51,7 @@ export default function PostPage({ frontmatter, content }) {
       </Head>
       <article className="container prose mx-auto">
         {frontmatter.image !== undefined ?
-        <div className="half-width">
+        <div className="w-full">
           <img src={frontmatter.image} alt={frontmatter.title} className="mx-auto" />
         </div> : <></>}
         <div className="border-b border-gray-200 mb-8">
