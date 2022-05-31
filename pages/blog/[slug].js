@@ -37,12 +37,19 @@ export default function PostPage({ frontmatter, content }) {
   return (
     <div className='p-4'>
       <Head>
-        <title>{frontmatter.title} | MyEpitaph.com</title>
+        <title>{frontmatter.title} | Elliot Forbes</title>
         <meta name="description" content={`${frontmatter.metaDesc}`}/>
-        <meta property="og:title" content="Profile | MyEpitaph.com"/>
+        <meta property="og:title" content={`${frontmatter.title} + " | Elliot Forbes`} />
         <meta property="og:description" content={`${frontmatter.metaDesc}`}/>
-        <meta property="og:url" content="https://myepitaph.com/"/>
+        <meta property="og:url" content="https://elliotf.dev/"/>
         <meta property="og:type" content="website"/>
+        <meta property="og:image" content={`${frontmatter.image}`} key="ogimage" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary" key="twcard" />
+        <meta name="twitter:creator" content="@elliot_f" key="twhandle" />
+
+
       </Head>
       <article className="container prose mx-auto">
         {frontmatter.image !== undefined ?
