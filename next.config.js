@@ -5,10 +5,10 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
   experimental: { esmExternals: true },
-  i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
-  },
+  // i18n: {
+  //   locales: ["en-US"],
+  //   defaultLocale: "en",
+  // },
   images: {
     loader: 'akamai',
     path: '',
