@@ -51,7 +51,7 @@ export default function PostPage({ frontmatter, content }) {
         <meta property="og:image" content={`${frontmatter.image}`} key="ogimage" />
 
         {/* Twitter */}
-        <meta name="twitter:card" content="summary" key="twcard" />
+        <meta name="twitter:card" content="summary_large_image" key="twcard" />
         <meta name="twitter:creator" content="@elliot_f" key="twhandle" />
       </Head>
       <article className="container prose mx-auto">
