@@ -52,6 +52,7 @@ export default function PostPage({ frontmatter, content }) {
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" key="twcard" />
+        <meta name="twitter:site" content="@elliot_f" />
         <meta name="twitter:creator" content="@elliot_f" key="twhandle" />
       </Head>
       <article className="container prose mx-auto">
