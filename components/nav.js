@@ -5,10 +5,15 @@ export default function Nav() {
     <div className="p-4 mx-auto">
       <div className="grid md:grid-cols-3 container mx-auto md:justify-between">
        <div className="flex justify-center md:justify-none my-4 md:block md:flex text-white">
-          <div className="relative my-4">
+          <div className="flex relative my-4">
             <Link href="/">
               <a className="button hover:underline z-10 pr-4 pl-4 block text-black pt-3 p-2 mr-4">
                 Blog
+              </a>
+            </Link>
+            <Link href="/gallery">
+              <a className="button hover:underline z-10 pr-4 pl-4 block text-black pt-3 p-2 mr-4">
+                Gallery
               </a>
             </Link>
           </div>
