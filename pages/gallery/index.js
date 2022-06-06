@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export function getStaticProps() {
   return { props: {
     images: [
@@ -24,28 +26,28 @@ export default function Gallery({images}) {
       <div className="grid gap-2 grid-cols-4">
         <div>
           {images?.map((image) => (
-            <img className="mb-2" key={image} src={image} alt={image} />
+            <Image  width="100%" height="100%" layout="responsive" objectFit="contain" className="mb-2" key={image} src={image} alt={image} />
           )).filter(function (value, index, ar) {
             return (index % 4 == 0);
           })}
         </div>
         <div>
           {images?.map((image) => (
-            <img className="mb-2" key={image} src={image} alt={image} />
+            <Image  width="100%" height="100%" layout="responsive" objectFit="contain" className="mb-2" key={image} src={image} alt={image} />
           )).filter(function (value, index, ar) {
             return (index % 4 == 1);
           })}
         </div>
         <div>
           {images?.map((image) => (
-            <img className="mb-2" key={image} src={image} alt={image} />
+            <Image  width="100%" height="100%" layout="responsive" objectFit="contain" className="mb-2" key={image} src={image} alt={image} />
           )).filter(function (value, index, ar) {
             return (index % 4 == 2);
           })}
         </div>
         <div>
           {images?.map((image) => (
-            <img className="mb-2" key={image} src={image} alt={image} />
+            <Image  width="100%" height="100%" layout="responsive" objectFit="contain" className="mb-2" key={image} src={image} alt={image} />
           )).filter(function (value, index, ar) {
             return (index % 4 == 3);
           })}
