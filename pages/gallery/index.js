@@ -6,15 +6,24 @@ export default function Gallery({ }) {
     gallery: []
   })
 
-  useEffect(() => {
-    axios.get("/api/gallery")
-      .then(resp => {
-        let gallery = resp?.data;
-        setData({
-          gallery
-        });
-      })
-  }, [])
+  setData({
+    gallery: {
+      images: [
+        'https://media.elliotf.dev/2022/06/03/DSC00413.jpg',
+        'https://media.elliotf.dev/2022/06/03/DSC00372.jpg',
+        'https://media.elliotf.dev/2022/06/03/DSC00435.jpg',
+        'https://media.elliotf.dev/2022/06/03/DSC00408.jpg',
+        'https://media.elliotf.dev/2022/06/03/DSC00437.jpg',
+        'https://media.elliotf.dev/2022/06/03/DSC00507.jpg',
+        'https://media.elliotf.dev/2022/06/03/DSC00502.jpg',
+        'https://media.elliotf.dev/2022/06/03/DSC00485.jpg',
+        'https://media.elliotf.dev/2022/06/03/DSC00492.jpg',
+        'https://media.elliotf.dev/2022/06/03/DSC00489.jpg',
+        'https://media.elliotf.dev/2022/06/03/DSC00510.jpg',
+        'https://media.elliotf.dev/2022/06/03/DSC00569.jpg'
+      ]
+    }
+  })
 
   return (
     <div>
