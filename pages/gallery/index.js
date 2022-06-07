@@ -21,7 +21,7 @@ export default function Gallery({images}) {
   return (
     <div>
       <h2 className="text-xl font-extrabold mb-8">My Super Awesome Gallery</h2>
-      <div className="grid gap-2 grid-cols-4">
+      <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <div>
           {images?.map((image) => (
             <img className="mb-2" key={image} src={image} alt={image} />
